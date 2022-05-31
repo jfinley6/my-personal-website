@@ -1,74 +1,110 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
+.nav-wrapper {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    background-color: rgb(130, 130, 255);
-    color: #e5e5e5
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(130, 130, 255);
+  color: #e5e5e5;
+  height: 15vh;
 }
 
 .nav-title {
-    font-size: 25px;
-    margin-left: 20px;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    color: rgb(240, 236, 236);
-    white-space: nowrap;
+  font-size: 25px;
+  margin-left: 20px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  color: rgb(240, 236, 236);
+  white-space: nowrap;
 }
 
 .nav-image {
-    max-width: 112.8px;
-    min-width: 112.8px;
-    height: auto;
-    display: block;
-    margin-left: 5px;
+  max-width: 112.8px;
+  min-width: 112.8px;
+  height: auto;
+  display: block;
+  margin-left: 5px;
 }
 
-.nav-links{
-    display: flex;
+.nav-links {
+  display: flex;
+  height: 100%;
 }
 
 .nav-links ul {
-    margin: 0;
-    display: flex;
-    padding-left: 0;
-    width: auto;
+  margin: 0;
+  display: flex;
+  padding-left: 0;
+  width: auto;
+  height: 100%;
 }
 
-
 .nav-links a {
-    text-decoration: none;
-    color: rgb(240, 236, 236);
+  text-decoration: none;
+  color: rgb(240, 236, 236);
+  display: block;
 }
 
 .nav-links li {
-    padding: 30px;
-    list-style-type: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    justify-content: center;
-    width: 110px;
-    display: flex;
-    justify-content: center;
+  padding: 30px;
+  font-size: 1.25rem;
+  list-style-type: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  width: 110px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links li:hover {
-    background-color: green;
+  background-color: green;
+}
+
+.profile-picture {
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 450px;
+  position: relative;
+  /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.body-wrapper {
+  display: flex;
+}
+
+.profile-picture-wrapper {
+  width: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-text {
+  width: 50%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 40px;
+  flex-direction: column;
 }
