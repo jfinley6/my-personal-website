@@ -80,7 +80,7 @@ body {
   margin-left: 20px;
   margin-top: 20px;
   border-radius: 50%;
-  height: 450px;
+  height: 400px;
   position: relative;
   /* display: block;
     margin-left: auto;
@@ -89,6 +89,9 @@ body {
 
 .body-wrapper {
   display: flex;
+  border: 12px solid rgb(130, 130, 255);
+  border-top: 0px;
+  height: 85vh;
 }
 
 .profile-picture-wrapper {
@@ -96,6 +99,7 @@ body {
   float: left;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .profile-text {
@@ -107,4 +111,5 @@ body {
   font-weight: bold;
   font-size: 40px;
   flex-direction: column;
+  color: rgb(20, 69, 154);
 }
