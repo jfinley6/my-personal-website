@@ -7,6 +7,14 @@ body {
   padding: 0;
 }
 
+.body-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 12px solid rgb(130, 130, 255);
+  height: 88vh;
+}
+
 .nav-wrapper {
   position: sticky;
   width: 100%;
@@ -19,17 +27,16 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(130, 130, 255);
-  color: #e5e5e5;
-  height: 15vh;
+  height: 12vh;
 }
 
 .nav-title {
-  font-size: 25px;
+  font-size: 30px;
   margin-left: 20px;
   font-family: sans-serif;
   display: flex;
   align-items: center;
-  color: rgb(240, 236, 236);
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -50,30 +57,34 @@ body {
   margin: 0;
   display: flex;
   padding-left: 0;
-  width: auto;
+  width: 30vw;
   height: 100%;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: rgb(240, 236, 236);
-  display: block;
-}
-
 .nav-links li {
-  padding: 30px;
   font-size: 1.25rem;
   list-style-type: none;
   font-family: sans-serif;
   font-weight: bold;
   justify-content: center;
-  width: 110px;
+  width: 100%;
   display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .nav-links li:hover {
-  background-color: green;
+  background-color: rgb(69, 69, 234);
 }
 
 .profile-picture {
@@ -81,17 +92,6 @@ body {
   margin-top: 20px;
   border-radius: 50%;
   height: 400px;
-  position: relative;
-  /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
-.body-wrapper {
-  display: flex;
-  border: 12px solid rgb(130, 130, 255);
-  border-top: 0px;
-  height: 85vh;
 }
 
 .profile-picture-wrapper {
@@ -113,3 +113,46 @@ body {
   flex-direction: column;
   color: rgb(20, 69, 154);
 }
+
+.project-1 {
+  border: 5px solid red;
+  height: 45vh;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 25%;
+}
+
+.project-2 {
+  border: 5px solid red;
+  height: 45vh;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 25%;
+}
+
+.project-title {
+  top: 0%;
+  height: 20%;
+  font-size: 3vw;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.project-image {
+  height: 80%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+/* .active {
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+} */
