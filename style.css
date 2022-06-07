@@ -91,7 +91,7 @@ body {
   margin-left: 20px;
   margin-top: 20px;
   border-radius: 50%;
-  height: 400px;
+  height: 70vh;
 }
 
 .profile-picture-wrapper {
@@ -103,7 +103,7 @@ body {
 }
 
 .profile-text {
-  width: 50%;
+  width: 60vw;
   float: right;
   display: flex;
   justify-content: center;
@@ -159,7 +159,14 @@ body {
 }
 
 .tryButton {
-  padding-right: 7px;
+  background-color: #eeeeee;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: black;
+  margin-right: 10px;
 }
 
 /* .active {
