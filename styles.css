@@ -63,6 +63,7 @@ ul .nav-image {
   padding: 0 1.5em 0 1.5em;
   text-decoration: none;
   color: var(--clr-white);
+  transition: all ease-out 0.3s;
 }
 
 .navbar ul li:first-child {
@@ -72,6 +73,7 @@ ul .nav-image {
 
 .navbar ul li a:hover {
   background-color: green;
+  transition: all ease-in 0.3s;
 }
 
 .fa-solid {
@@ -160,3 +162,8 @@ p.date {
     overflow-y: scroll;
   }
 }
+
+/* .active {
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+} */
