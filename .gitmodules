@@ -1,0 +1,7 @@
+[submodule "etch-a-sketch"]
+	path = etch-a-sketch
+	url = https://github.com/jfinley6/etch-a-sketch
+
+[submodule "calculator"]
+	path = calculator
+	url = https://github.com/jfinley6/calculator
