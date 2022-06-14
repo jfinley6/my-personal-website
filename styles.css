@@ -71,8 +71,12 @@ ul .nav-image {
   margin-left: 20px;
 }
 
+#font {
+  font-size: 1.5em;
+}
+
 .navbar ul li a:hover {
-  background-color: green;
+  background-color: rgb(87, 87, 255);
   transition: all ease-in 0.3s;
 }
 
@@ -134,7 +138,27 @@ p.date {
   margin-top: 0;
 }
 
-@media screen and (max-width: 600px) {
+.toggle-button {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  right: 1em;
+  display: none;
+}
+
+.bar {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 615px) {
   #wrapper-grid {
     grid-template-columns: 1fr;
   }
@@ -154,12 +178,43 @@ p.date {
     margin-bottom: 1.5em;
   }
 
-  .navbar ul li a {
-    padding: 0 1em;
+  .toggle-button {
+    display: flex;
+    margin-right: 0.5em;
   }
 
-  #blogs {
-    overflow-y: scroll;
+  .navbar ul li a {
+    /* display: none; */
+    background-color: var(--clr-primary);
+    width: 100px;
+  }
+
+  #child2 {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  #child3 {
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  #child4 {
+    position: absolute;
+    top: 144px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  #child5 {
+    position: absolute;
+    top: 192px;
+    width: 100%;
+    justify-content: flex-end;
   }
 }
 
