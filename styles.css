@@ -20,6 +20,8 @@ body {
   background-color: var(--clr-background);
 }
 
+/* Navbar Styling */
+
 .navbar {
   width: 100vw;
   background-color: var(--clr-primary);
@@ -149,6 +151,8 @@ p.date {
   margin-top: 0;
 }
 
+/* Toggle Button Styling */
+
 .toggle-button {
   position: absolute;
   width: 30px;
@@ -190,7 +194,111 @@ p.date {
   color: blue;
 }
 
+.mainBody {
+  background-color: var(--clr-background);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 3em;
+  width: auto;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.profilePicture {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.aboutSection {
+  color: rgb(54, 54, 167);
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-top: 50px;
+}
+
+#aboutHeader {
+  font-size: 2.5em;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.aboutSection ul li {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+#contactBar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 125px;
+  height: 100px;
+}
+
+.fa-linkedin {
+ margin-right: 20px;
+}
+
+.fa-github {
+  margin-right: 150px;
+}
+
+/* Styling for mobile */
+
+@media (max-width: 800px) {
+  .mainBody {
+    grid-template-columns: 1fr;
+  }
+
+  .profilePicture {
+    margin-top: 40px;
+  }
+
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .aboutSection ul li {
+    font-size: 1em;
+    margin-left: 20px;
+  }
+
+  #contactBar {
+    margin-left: 70px;
+    display: flex;
+  }
+
+  .fa-linkedin {
+ margin-right: 20px;
+ margin-left: 30px;
+}
+
+.fa-github {
+  margin-right: 0;
+}
+
+.menuItem {
+    z-index: 97;
+  }
+
+  .navbar {
+    z-index: 96;
+  }
+
+}
+
 @media (max-width: 650px) {
+  
   #wrapper-grid {
     grid-template-columns: 1fr;
   }
@@ -234,6 +342,14 @@ p.date {
     justify-content: center;
   }
 
+  .menuItem {
+    z-index: 97;
+  }
+
+  .navbar {
+    z-index: 96;
+  }
+
   #child2 {
     position: absolute;
     top: 48px;
@@ -262,10 +378,3 @@ p.date {
     justify-content: center;
   }
 }
-
-/* .active {
-  border-top: 3px solid red;
-  border-bottom: 3px solid red;
-} */
-
-
