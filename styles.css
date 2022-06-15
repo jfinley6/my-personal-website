@@ -107,6 +107,17 @@ ul .nav-image {
   color: var(--clr-grey);
 }
 
+#myInput {
+  width: 100%; /* Full-width */
+  height: 100%;
+  font-size: 16px; /* Increase font-size */
+  border: none;
+}
+
+#myInput:focus {
+  outline: none;
+}
+
 .material-icons {
   padding: 0 0.3em;
   font-size: 1em;
@@ -121,7 +132,7 @@ ul .nav-image {
 .container {
   background-color: var(--clr-white);
   border-radius: var(--border-radius);
-  padding: 1em;
+  padding: 0.75em;
   border-top: 4px solid var(--clr-primary);
 }
 
@@ -158,6 +169,27 @@ p.date {
   margin-left: auto;
 }
 
+#wrapper-grid .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 9px 0 0 0;
+}
+
+#wrapper-grid ul div {
+  margin-right: 0.3em;
+}
+
+#wrapper-grid li {
+  margin-right: 0.4em;
+}
+
+#wrapper-grid a {
+  text-decoration: none;
+  color: blue;
+}
+
 @media (max-width: 650px) {
   #wrapper-grid {
     grid-template-columns: 1fr;
@@ -174,8 +206,8 @@ p.date {
   }
 
   #search {
-    width: 100%;
     margin-bottom: 1.5em;
+    width: 100%;
   }
 
   .toggle-button {
@@ -183,38 +215,51 @@ p.date {
     margin-right: 0.5em;
   }
 
-  .navbar ul li a {
+  .navbar ul li:nth-last-child(-n + 4) {
     display: none;
+  }
+
+  .navbar ul li.active {
+    display: flex;
+  }
+
+  .navbar ul li a {
     background-color: var(--clr-primary);
-    width: 100px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #wrapper-main h1 {
+    display: flex;
+    justify-content: center;
   }
 
   #child2 {
     position: absolute;
     top: 48px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   #child3 {
     position: absolute;
     top: 96px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   #child4 {
     position: absolute;
     top: 144px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   #child5 {
     position: absolute;
     top: 192px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
@@ -222,3 +267,5 @@ p.date {
   border-top: 3px solid red;
   border-bottom: 3px solid red;
 } */
+
+

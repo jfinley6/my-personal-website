@@ -19,19 +19,19 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
-        <li id="child2"><a href="./index.html">About</a></li>
-        <li id="child3"><a href="./projects.html">Projects</a></li>
-        <li id="child4"><a href="./blogs.html">Blogs</a></li>
-        <li id="child5"><a href="./contact.html">Contact</a></li>
+        <li class="menuItem" id="child2"><a href="./index.html">About</a></li>
+        <li class="menuItem" id="child3"><a href="./projects.html">Projects</a></li>
+        <li class="menuItem" id="child4"><a href="./blogs.html">Blogs</a></li>
+        <li class="menuItem" id="child5"><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
 
     <div id="wrapper-main">
       <div class="header">
-        <h1>Flatiron Blogs</h1>
+        <h1>Blogs</h1>
         <div id="search">
           <span class="material-icons"><i class="fa-solid fa-magnifying-glass"></i></span>
-          Search
+          <input type="text" id="myInput" onkeyup="checkTags()" placeholder="Search for tags">
         </div>
       </div>
       <div id="wrapper-grid">
@@ -42,49 +42,48 @@
           repellat accusantium hic error, molestiae enim sed. Vel enim nesciunt
           a sunt ipsa! Fugiat quam magni, voluptatem obcaecati quisquam id
           perspiciatis!
+          <ul>
+            <div>Tags:</div>
+            <li class="searchElement"><a href="#">HTML</a>,</li>
+            <li class="searchElement"><a href="#">CSS</a>,</li>
+            <li class="searchElement"><a href="#">JavaScript</a>,</li>
+            <li class="searchElement"><a href="#">React</a></li>
+          </ul>
         </div>
         <div class="container">
-          <p class="date">June 13, 2022</p>
-          <h2>Header</h2>
+          <p class="date">June 29, 2022</p>
+          <h2>First Blog</h2>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
           repellat accusantium hic error, molestiae enim sed. Vel enim nesciunt
           a sunt ipsa! Fugiat quam magni, voluptatem obcaecati quisquam id
           perspiciatis!
+          <ul id="myUL">
+            <div>Tags:</div>
+            <li class="searchElement"><a href="#">Ruby</a>,</li>
+            <li class="searchElement"><a href="#">Rails</a>,</li>
+            <li class="searchElement"><a href="#">Typescript</a>,</li>
+            <li class="searchElement"><a href="#">Java</a></li>
+          </ul>
         </div>
         <div class="container">
-          <p class="date">June 13, 2022</p>
-          <h2>Header</h2>
+          <p class="date">June 28, 2022</p>
+          <h2>First Blog</h2>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
           repellat accusantium hic error, molestiae enim sed. Vel enim nesciunt
           a sunt ipsa! Fugiat quam magni, voluptatem obcaecati quisquam id
           perspiciatis!
+          <ul>
+            <div>Tags:</div>
+            <li class="searchElement"><a href="#">Assembly</a>,</li>
+            <li class="searchElement"><a href="#">C#</a>,</li>
+            <li class="searchElement"><a href="#">C</a>,</li>
+            <li class="searchElement"><a href="#">C++</a></li>
+          </ul>
         </div>
-        <div class="container">
-          <p class="date">June 13, 2022</p>
-          <h2>Header</h2>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-          repellat accusantium hic error, molestiae enim sed. Vel enim nesciunt
-          a sunt ipsa! Fugiat quam magni, voluptatem obcaecati quisquam id
-          perspiciatis!
-        </div>
-        <div class="container">
-          <p class="date">June 13, 2022</p>
-          <h2>Header</h2>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-          repellat accusantium hic error, molestiae enim sed. Vel enim nesciunt
-          a sunt ipsa! Fugiat quam magni, voluptatem obcaecati quisquam id
-          perspiciatis!
-        </div>
-        <div class="container">
-          <p class="date">June 13, 2022</p>
-          <h2>Header</h2>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-          repellat accusantium hic error, molestiae enim sed. Vel enim nesciunt
-          a sunt ipsa! Fugiat quam magni, voluptatem obcaecati quisquam id
-          perspiciatis!
-        </div>
+
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 
 </html>
