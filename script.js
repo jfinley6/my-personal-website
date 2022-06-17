@@ -9,37 +9,44 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-// searchElements = document.getElementsByClassName("searchElement");
+searchElement1 = document.querySelectorAll(".container")[0];
+searchElement2 = document.querySelectorAll(".container")[1];
+searchElement3 = document.querySelectorAll(".container")[2];
 
-// let searchArray = [...searchElements];
+function checkTags() {
+    let arr1 = [];
+    let arr2 = [];
+    let arr3 = [];
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
 
-// function checkTags() {
+    for (let i = 1; i < searchElement1.children[2].children.length; i++) {
+        arr1.push(searchElement1.children[2].children[i].innerText.replace(",", ""))
+        if (arr1[i - 1].toUpperCase().indexOf(filter) > -1) {
+            searchElement1.style.display = "";
+            break;
+        } else {
+            searchElement1.style.display = "none";
+        }
+    }
 
-//     arr = [];
-//     input = document.getElementById("myInput");
-//     filter = input.value.toUpperCase();
-//     for (let i = 0; i < searchArray.length; i++) {
-//         arr.push(searchArray[i].innerText.replaceAll(",", "").toUpperCase());
-//         if (arr[i].includes(filter)) {
-//             searchArray[i].parentNode.parentNode.style.display = "";
-//         } else {
-//             searchArray[i].parentNode.parentNode.style.display = "none";
-//         }
-
-//     }
-// }
-
-// arr = [];
-// input = document.getElementById("myInput");
-// filter = input.value.toUpperCase();
-// for (let i = 0; i < searchArray.length; i++) {
-//     arr.push(searchArray[i].innerText.replaceAll(",", "").toUpperCase());
-//     if (arr[i].includes(filter)) {
-//         searchArray[i].parentNode.parentNode.style.display = "";
-//     } else {
-//         searchArray[i].parentNode.parentNode.style.display = "none";
-//     }
-
-// }
-// console.log(arr)
-// console.log(arr[0].includes("H"))
+    for (let i = 1; i < searchElement2.children[2].children.length; i++) {
+        arr2.push(searchElement2.children[2].children[i].innerText.replace(",", ""))
+        if (arr2[i - 1].toUpperCase().indexOf(filter) > -1) {
+            searchElement2.style.display = "";
+            break;
+        } else {
+            searchElement2.style.display = "none";
+        }
+    }
+    
+    for (let i = 1; i < searchElement3.children[2].children.length; i++) {
+        arr3.push(searchElement3.children[2].children[i].innerText.replace(",", ""))
+        if (arr3[i - 1].toUpperCase().indexOf(filter) > -1) {
+            searchElement3.style.display = "";
+            break;
+        } else {
+            searchElement3.style.display = "none";
+        }
+    }
+}
