@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/e66ae3e757.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>My Personal Website</title>
   </head>
@@ -23,23 +24,38 @@
         <li class="menuItem" id="child4"><a href="./blogs.html">Blogs</a></li>
       </ul>
     </div>
-    <!-- <div class="body-wrapper">
-      <div id="project-1">
-        <div class="project-title">Calculator</div>
-        <div class="project-image"><img src="calculator.png" class="calculatorImage"></img></div>
-        <div style="display:flex; align-items: center; padding-top:5px">
-          <div><a class="tryButton" href="./calculator/index.html">Try It</a></div>
-          <div><a href="https://github.com/jfinley6/calculator" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+    <div id="wrapper-main">
+      <div class="header">
+        <h1>Projects</h1>
+      </div>
+      <div id="wrapper-grid">
+        <div style="display: flex; flex-direction: column; align-items:center" class="container">
+          <h2>Calculator</h2>
+          <img style="height: 246.45px" src="./calculator.png">
+          <ul class="projectLinks">
+            <li><a href="./calculator/index.html" target="_blank">Try It</a></li>
+            <li class="projectGithub"><a href="https://github.com/jfinley6/calculator" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items:center" class="container">
+          <h2>Star Wars Characters</h2>
+          <img style="height: 246.45px" src="./starwarsapi.jpeg">
+          <ul class="projectLinks">
+            <li><a href="./starwars-api/index.html" target="_blank">Try It</a></li>
+            <li class="projectGithub"><a href="https://github.com/jfinley6/Star-Wars-API-Characters" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+          </ul>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items:center" class="container">
+          <h2>Etch-A-Sketch</h2>
+          <img style="height: 246.45px" src="./etch-a-sketch.png">
+          <ul  class="projectLinks">
+            <li><a href="./etch-a-sketch/index.html" target="_blank">Try It</a></li>
+            <li class="projectGithub"><a href="https://github.com/jfinley6/etch-a-sketch" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+          </ul>
         </div>
       </div>
-      <div id="project-2">
-        <div class="project-title">Etch-A-Sketch</div>
-        <div class="project-image"><img src="etch-a-sketch.png" class="calculatorImage"></img></div>
-        <div style="display:flex; align-items: center; padding-top:5px">
-          <div><a class="tryButton" href="./etch-a-sketch/">Try It</a></div>
-          <div><a href="https://github.com/jfinley6/etch-a-sketch" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-      </div>
-    </div> -->
+    </div>
     <script src="./script.js"></script>
   </body>
 

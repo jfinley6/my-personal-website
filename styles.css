@@ -255,8 +255,18 @@ p.date {
   color: rgb(54, 54, 167);
 }
 
-.fa-github {
-  margin-right: 150px;
+.fa-github:visited {
+  color: rgb(54, 54, 167);
+}
+
+#wrapper-grid > .container > .projectLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectGithub {
+  margin-top: 5px;
 }
 
 /* Styling for mobile */
