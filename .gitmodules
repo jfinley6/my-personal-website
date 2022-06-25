@@ -5,3 +5,7 @@
 [submodule "calculator"]
 	path = calculator
 	url = https://github.com/jfinley6/calculator
+
+[submodule "starwars-api"]
+	path = starwars-api
+	url = https://github.com/jfinley6/Star-Wars-API-Characters

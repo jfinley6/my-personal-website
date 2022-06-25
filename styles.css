@@ -247,6 +247,14 @@ p.date {
  margin-right: 20px;
 }
 
+#linkedin:visited {
+  color: rgb(54, 54, 167);
+}
+
+#github:visited {
+  color: rgb(54, 54, 167);
+}
+
 .fa-github {
   margin-right: 150px;
 }

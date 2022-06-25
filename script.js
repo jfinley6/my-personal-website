@@ -17,8 +17,8 @@ function checkTags() {
     let arr1 = [];
     let arr2 = [];
     let arr3 = [];
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
+    const input = document.getElementById("myInput");
+    const filter = input.value.toUpperCase();
 
     for (let i = 1; i < searchElement1.children[2].children.length; i++) {
         arr1.push(searchElement1.children[2].children[i].innerText.replace(",", ""))
