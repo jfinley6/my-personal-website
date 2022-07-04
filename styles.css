@@ -316,8 +316,10 @@ p.date {
   }
 }
 
-@media (max-width: 650px) {
-  
+@media (max-width: 1000px) {
+  h1 {
+    padding-top: 15px;
+  }
 
   #wrapper-grid {
     grid-template-columns: 1fr;
