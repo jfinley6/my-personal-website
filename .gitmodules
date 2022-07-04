@@ -9,3 +9,7 @@
 [submodule "starwars-api"]
 	path = starwars-api
 	url = https://github.com/jfinley6/Star-Wars-API-Characters
+
+[submodule "meteor-coordinates-map"]
+	path = meteor-coordinates-map
+	url = https://github.com/jfinley6/meteor-coordinates-map
