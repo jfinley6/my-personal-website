@@ -13,3 +13,7 @@
 [submodule "meteor-coordinates-map"]
 	path = meteor-coordinates-map
 	url = https://github.com/jfinley6/meteor-coordinates-map
+
+[submodule "meteor-coordinates-map"]
+	path = phase-1-project
+	url = https://github.com/jfinley6/phase-1-project
